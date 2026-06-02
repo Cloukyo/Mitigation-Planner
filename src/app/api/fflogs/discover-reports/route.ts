@@ -41,8 +41,11 @@ export async function POST(request: NextRequest) {
     const candidates: ReportSampleCandidate[] = [];
     let selected: ReportSampleCandidate[] = [];
     const seen = new Set<string>();
-    const pageSize = Math.max(20, sampleSize * 4);
-    const maxPages = 5;
+    // FFLogs applies a GraphQL complexity cap per request. Including fights on
+    // report discovery gets expensive quickly, so keep each page modest and
+    // collect additional candidates across more pages instead.
+    const pageSize = Math.min(40, Math.max(10, sampleSize * 2));
+    const maxPages = 8;
     for (let page = 1; page <= maxPages; page += 1) {
       const pageCandidates = await discoverReports({
         fflogsZoneId: body.fflogsZoneId ?? mapping?.fflogsZoneId,
