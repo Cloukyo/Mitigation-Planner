@@ -1,0 +1,23 @@
+[
+  { "id": "pld", "abbr": "PLD", "name": "Paladin", "role": "tank" },
+  { "id": "war", "abbr": "WAR", "name": "Warrior", "role": "tank" },
+  { "id": "drk", "abbr": "DRK", "name": "Dark Knight", "role": "tank" },
+  { "id": "gnb", "abbr": "GNB", "name": "Gunbreaker", "role": "tank" },
+  { "id": "whm", "abbr": "WHM", "name": "White Mage", "role": "healer" },
+  { "id": "sch", "abbr": "SCH", "name": "Scholar", "role": "healer" },
+  { "id": "ast", "abbr": "AST", "name": "Astrologian", "role": "healer" },
+  { "id": "sge", "abbr": "SGE", "name": "Sage", "role": "healer" },
+  { "id": "mnk", "abbr": "MNK", "name": "Monk", "role": "melee" },
+  { "id": "drg", "abbr": "DRG", "name": "Dragoon", "role": "melee" },
+  { "id": "nin", "abbr": "NIN", "name": "Ninja", "role": "melee" },
+  { "id": "sam", "abbr": "SAM", "name": "Samurai", "role": "melee" },
+  { "id": "rpr", "abbr": "RPR", "name": "Reaper", "role": "melee" },
+  { "id": "vpr", "abbr": "VPR", "name": "Viper", "role": "melee" },
+  { "id": "brd", "abbr": "BRD", "name": "Bard", "role": "ranged" },
+  { "id": "mch", "abbr": "MCH", "name": "Machinist", "role": "ranged" },
+  { "id": "dnc", "abbr": "DNC", "name": "Dancer", "role": "ranged" },
+  { "id": "blm", "abbr": "BLM", "name": "Black Mage", "role": "caster" },
+  { "id": "smn", "abbr": "SMN", "name": "Summoner", "role": "caster" },
+  { "id": "rdm", "abbr": "RDM", "name": "Red Mage", "role": "caster" },
+  { "id": "pct", "abbr": "PCT", "name": "Pictomancer", "role": "caster" }
+]

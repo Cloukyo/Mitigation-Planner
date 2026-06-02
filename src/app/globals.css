@@ -1,0 +1,330 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --color-black: 2 5 10;
+  --color-white: 245 248 252;
+  --color-ink: 5 9 16;
+  --color-panel: 13 21 33;
+  --color-line: 64 83 105;
+  --color-soft: 148 164 184;
+  --color-danger: 214 74 74;
+
+  --color-slate-50: 240 246 252;
+  --color-slate-100: 220 229 239;
+  --color-slate-200: 194 207 222;
+  --color-slate-300: 161 178 199;
+  --color-slate-400: 125 145 170;
+  --color-slate-500: 96 116 141;
+  --color-slate-600: 72 90 113;
+  --color-slate-700: 48 64 84;
+  --color-slate-800: 31 43 61;
+  --color-slate-900: 16 26 42;
+  --color-slate-950: 7 12 22;
+
+  --color-teal-50: 226 255 250;
+  --color-teal-100: 188 247 240;
+  --color-teal-200: 133 235 225;
+  --color-teal-300: 55 214 203;
+  --color-teal-400: 30 188 184;
+  --color-teal-500: 21 152 155;
+  --color-teal-600: 19 121 128;
+  --color-teal-700: 18 93 101;
+  --color-teal-800: 18 67 75;
+  --color-teal-900: 13 44 51;
+  --color-teal-950: 6 25 31;
+
+  --color-amber-50: 255 249 225;
+  --color-amber-100: 255 234 177;
+  --color-amber-200: 247 211 117;
+  --color-amber-300: 229 184 73;
+  --color-amber-400: 207 151 42;
+  --color-amber-500: 176 118 30;
+  --color-amber-600: 141 88 27;
+  --color-amber-700: 105 64 27;
+  --color-amber-800: 73 45 24;
+  --color-amber-900: 48 31 20;
+  --color-amber-950: 28 17 10;
+
+  --color-red-50: 255 239 238;
+  --color-red-100: 255 215 212;
+  --color-red-200: 251 176 171;
+  --color-red-300: 239 125 119;
+  --color-red-400: 214 74 74;
+  --color-red-500: 185 49 55;
+  --color-red-600: 150 38 47;
+  --color-red-700: 113 32 40;
+  --color-red-800: 78 27 33;
+  --color-red-900: 51 21 26;
+  --color-red-950: 30 12 15;
+
+  --color-emerald-50: 232 251 239;
+  --color-emerald-100: 194 241 210;
+  --color-emerald-200: 141 225 172;
+  --color-emerald-300: 87 202 132;
+  --color-emerald-400: 51 171 99;
+  --color-emerald-500: 36 139 79;
+  --color-emerald-600: 29 108 65;
+  --color-emerald-700: 24 82 53;
+  --color-emerald-800: 19 58 41;
+  --color-emerald-900: 13 38 28;
+  --color-emerald-950: 7 22 17;
+
+  --color-sky-50: 232 247 255;
+  --color-sky-100: 199 234 252;
+  --color-sky-200: 153 216 246;
+  --color-sky-300: 91 190 235;
+  --color-sky-400: 49 158 215;
+  --color-sky-500: 33 126 183;
+  --color-sky-600: 28 98 146;
+  --color-sky-700: 25 74 110;
+  --color-sky-800: 19 52 78;
+  --color-sky-900: 13 34 52;
+  --color-sky-950: 7 20 32;
+
+  --color-cyan-50: 227 252 255;
+  --color-cyan-100: 187 244 250;
+  --color-cyan-200: 128 229 239;
+  --color-cyan-300: 59 207 224;
+  --color-cyan-400: 29 175 199;
+  --color-cyan-500: 22 139 165;
+  --color-cyan-600: 19 108 132;
+  --color-cyan-700: 17 80 100;
+  --color-cyan-800: 13 55 72;
+  --color-cyan-900: 9 36 49;
+  --color-cyan-950: 5 21 30;
+
+  --color-blue-50: 235 243 255;
+  --color-blue-100: 207 225 253;
+  --color-blue-200: 168 201 249;
+  --color-blue-300: 116 168 238;
+  --color-blue-400: 75 132 219;
+  --color-blue-500: 53 101 185;
+  --color-blue-600: 43 78 146;
+  --color-blue-700: 35 58 110;
+  --color-blue-800: 26 40 77;
+  --color-blue-900: 17 27 52;
+  --color-blue-950: 9 15 31;
+
+  --color-violet-50: 246 241 255;
+  --color-violet-100: 228 216 252;
+  --color-violet-200: 202 178 246;
+  --color-violet-300: 170 135 232;
+  --color-violet-400: 137 95 207;
+  --color-violet-500: 107 70 170;
+  --color-violet-600: 82 53 133;
+  --color-violet-700: 60 39 99;
+  --color-violet-800: 42 29 69;
+  --color-violet-900: 28 20 46;
+  --color-violet-950: 17 12 28;
+
+  --app-bg:
+    radial-gradient(circle at top left, rgba(55, 214, 203, 0.14), transparent 34rem),
+    radial-gradient(circle at 85% 8%, rgba(229, 184, 73, 0.08), transparent 30rem),
+    linear-gradient(180deg, rgb(8 13 24) 0%, rgb(5 9 16) 50%, rgb(3 6 11) 100%);
+  --timeline-grid-minor: rgba(161, 178, 199, 0.12);
+  --timeline-grid-major: rgba(229, 184, 73, 0.22);
+  --hud-inset: inset 0 1px 0 rgba(245, 248, 252, 0.06), inset 0 -1px 0 rgba(0, 0, 0, 0.32);
+  background: rgb(var(--color-ink));
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-black: 9 22 38;
+  --color-white: 9 22 38;
+  --color-ink: 242 232 210;
+  --color-panel: 255 249 235;
+  --color-line: 189 168 116;
+  --color-soft: 100 113 126;
+  --color-danger: 202 83 78;
+
+  --color-slate-50: 9 22 38;
+  --color-slate-100: 18 35 55;
+  --color-slate-200: 35 55 76;
+  --color-slate-300: 63 80 99;
+  --color-slate-400: 93 108 125;
+  --color-slate-500: 119 132 148;
+  --color-slate-600: 160 168 174;
+  --color-slate-700: 206 207 196;
+  --color-slate-800: 231 224 203;
+  --color-slate-900: 247 240 221;
+  --color-slate-950: 255 249 235;
+
+  --color-teal-50: 6 52 58;
+  --color-teal-100: 11 83 91;
+  --color-teal-200: 18 118 126;
+  --color-teal-300: 23 154 164;
+  --color-teal-400: 35 181 190;
+  --color-teal-500: 62 203 209;
+  --color-teal-600: 112 221 223;
+  --color-teal-700: 171 237 235;
+  --color-teal-800: 211 247 242;
+  --color-teal-900: 231 253 247;
+  --color-teal-950: 242 255 250;
+
+  --color-amber-50: 65 42 9;
+  --color-amber-100: 102 67 14;
+  --color-amber-200: 145 96 21;
+  --color-amber-300: 188 129 33;
+  --color-amber-400: 218 160 56;
+  --color-amber-500: 235 188 87;
+  --color-amber-600: 244 211 132;
+  --color-amber-700: 249 230 174;
+  --color-amber-800: 253 241 205;
+  --color-amber-900: 255 248 226;
+  --color-amber-950: 255 252 241;
+
+  --color-red-50: 91 23 26;
+  --color-red-100: 132 35 39;
+  --color-red-200: 169 52 55;
+  --color-red-300: 202 83 78;
+  --color-red-400: 224 122 112;
+  --color-red-500: 237 159 147;
+  --color-red-600: 246 195 184;
+  --color-red-700: 251 220 212;
+  --color-red-800: 254 236 231;
+  --color-red-900: 255 246 243;
+  --color-red-950: 255 250 248;
+
+  --color-emerald-50: 18 69 48;
+  --color-emerald-100: 29 101 70;
+  --color-emerald-200: 41 137 96;
+  --color-emerald-300: 58 166 120;
+  --color-emerald-400: 86 190 145;
+  --color-emerald-500: 124 211 170;
+  --color-emerald-600: 168 229 197;
+  --color-emerald-700: 205 243 221;
+  --color-emerald-800: 229 250 237;
+  --color-emerald-900: 243 255 247;
+  --color-emerald-950: 249 255 251;
+
+  --color-sky-50: 17 60 91;
+  --color-sky-100: 25 91 134;
+  --color-sky-200: 35 125 174;
+  --color-sky-300: 57 158 204;
+  --color-sky-400: 91 184 224;
+  --color-sky-500: 133 207 238;
+  --color-sky-600: 177 226 247;
+  --color-sky-700: 211 240 252;
+  --color-sky-800: 232 248 255;
+  --color-sky-900: 243 252 255;
+  --color-sky-950: 249 254 255;
+
+  --color-cyan-50: 8 63 73;
+  --color-cyan-100: 12 94 106;
+  --color-cyan-200: 18 129 143;
+  --color-cyan-300: 34 164 177;
+  --color-cyan-400: 70 191 201;
+  --color-cyan-500: 114 215 221;
+  --color-cyan-600: 166 234 235;
+  --color-cyan-700: 205 246 244;
+  --color-cyan-800: 230 252 249;
+  --color-cyan-900: 243 255 252;
+  --color-cyan-950: 250 255 253;
+
+  --color-blue-50: 18 47 88;
+  --color-blue-100: 29 72 123;
+  --color-blue-200: 43 100 162;
+  --color-blue-300: 65 132 198;
+  --color-blue-400: 101 163 224;
+  --color-blue-500: 140 191 239;
+  --color-blue-600: 181 219 250;
+  --color-blue-700: 213 237 255;
+  --color-blue-800: 233 247 255;
+  --color-blue-900: 244 252 255;
+  --color-blue-950: 250 254 255;
+
+  --color-violet-50: 58 42 95;
+  --color-violet-100: 82 59 131;
+  --color-violet-200: 112 82 169;
+  --color-violet-300: 145 111 204;
+  --color-violet-400: 176 147 225;
+  --color-violet-500: 204 184 240;
+  --color-violet-600: 225 212 249;
+  --color-violet-700: 240 232 253;
+  --color-violet-800: 248 243 255;
+  --color-violet-900: 252 249 255;
+  --color-violet-950: 254 252 255;
+
+  --app-bg:
+    radial-gradient(circle at 10% 0%, rgba(70, 191, 201, 0.25), transparent 34rem),
+    radial-gradient(circle at 88% 12%, rgba(235, 188, 87, 0.22), transparent 30rem),
+    linear-gradient(180deg, rgb(252 245 224) 0%, rgb(242 232 210) 54%, rgb(231 222 203) 100%);
+  --timeline-grid-minor: rgba(35, 55, 76, 0.14);
+  --timeline-grid-major: rgba(188, 129, 33, 0.28);
+  --hud-inset: inset 0 1px 0 rgba(255, 255, 255, 0.75), inset 0 -1px 0 rgba(122, 93, 42, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--app-bg);
+  color: rgb(var(--color-slate-100));
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid rgb(var(--color-teal-300));
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--color-slate-900));
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--color-slate-700));
+  border-radius: 999px;
+}
+
+.timeline-grid {
+  background-image:
+    linear-gradient(to right, var(--timeline-grid-minor) 1px, transparent 1px),
+    linear-gradient(to right, var(--timeline-grid-major) 1px, transparent 1px);
+  background-size: var(--minor-grid) 100%, var(--major-grid) 100%;
+}
+
+.timeline-event-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.border,
+.border-b,
+.border-t,
+.border-l,
+.border-r {
+  box-shadow: var(--hud-inset);
+}
+
+select,
+input,
+textarea,
+button {
+  accent-color: rgb(var(--color-teal-300));
+}
