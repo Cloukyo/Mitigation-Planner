@@ -261,11 +261,175 @@ export const publishedTemplateSeed: EncounterTemplate[] = [
     encounterCatalogueItemId: "dmu",
     name: "Dancing Mad Ultimate Day-One Prog Template",
     shortName: "DMU",
-    source: "manual",
+    source: "fflogs_curated_reports",
     status: "published",
-    events: [],
-    sourceLinks: [],
-    notes: "Blank day-one prog template. Add mechanics as they are discovered. FFLogs/common usage data will become useful after logs are available.",
+    events: [
+      {
+        ...event("dmu-p1-revolting-ruin-1", 11, "Revolting Ruin III", "unknown", "party", "high", "Provisional P1 scout timing from early public FFLogs prog pulls. Review damage/targeting in raid."),
+        eventTag: "raidwide",
+        source: "fflogs"
+      },
+      {
+        ...event("dmu-p1-graven-image-1", 27, "Graven Image", "unknown", "mechanic", "unknown", "Provisional P1 scout timing from early public FFLogs prog pulls."),
+        eventTag: "unknown",
+        mitigationRelevant: false,
+        source: "fflogs"
+      },
+      {
+        ...event("dmu-p1-mystery-magic-1", 33, "Mystery Magic", "unknown", "mechanic", "unknown", "Provisional P1 scout timing from early public FFLogs prog pulls."),
+        eventTag: "unknown",
+        mitigationRelevant: false,
+        source: "fflogs"
+      },
+      {
+        ...event("dmu-p1-blizzard-blowout-1", 33, "Blizzard III Blowout", "unknown", "spread", "medium", "Provisional P1 scout timing from early public FFLogs prog pulls. Targeting needs review."),
+        eventTag: "spread",
+        source: "fflogs"
+      },
+      {
+        ...event("dmu-p1-double-trouble-trap", 42, "Double-Trouble Trap", "unknown", "mechanic", "medium", "Provisional P1 scout timing from early public FFLogs prog pulls."),
+        eventTag: "unknown",
+        source: "fflogs"
+      },
+      {
+        ...event("dmu-p1-explosion", 44, "Explosion", "unknown", "party", "high", "Provisional P1 scout timing from early public FFLogs prog pulls."),
+        eventTag: "raidwide",
+        source: "fflogs"
+      },
+      {
+        ...event("dmu-p1-thrumming-thunder-1", 49, "Thrumming Thunder III", "unknown", "mechanic", "medium", "Provisional P1 scout timing from early public FFLogs prog pulls. Targeting needs review."),
+        eventTag: "unknown",
+        source: "fflogs"
+      },
+      {
+        ...event("dmu-p1-light-of-judgment-1", 58, "Light of Judgment", "magical", "party", "high", "Provisional P1 scout timing from early public FFLogs prog pulls."),
+        eventTag: "raidwide",
+        source: "fflogs"
+      },
+      {
+        ...event("dmu-p1-hyperdrive-1", 67, "Hyperdrive", "unknown", "tank", "high", "Observed as a cast in early public FFLogs prog pulls. Targeting needs review."),
+        eventTag: "tankbuster",
+        source: "fflogs"
+      },
+      {
+        ...event("dmu-p1-graven-image-2", 78, "Graven Image", "unknown", "mechanic", "unknown", "Provisional P1 scout timing from early public FFLogs prog pulls."),
+        eventTag: "unknown",
+        mitigationRelevant: false,
+        source: "fflogs"
+      },
+      {
+        ...event("dmu-p1-blizzard-blowout-2", 83, "Blizzard III Blowout", "unknown", "spread", "medium", "Provisional P1 scout timing from early public FFLogs prog pulls. Targeting needs review."),
+        eventTag: "spread",
+        source: "fflogs"
+      },
+      {
+        ...event("dmu-p1-revolting-ruin-2", 93, "Revolting Ruin III", "unknown", "party", "high", "Provisional P1 scout timing from early public FFLogs prog pulls. Review damage/targeting in raid."),
+        eventTag: "raidwide",
+        source: "fflogs"
+      },
+      {
+        ...event("dmu-p1-light-of-judgment-2", 128, "Light of Judgment", "magical", "party", "high", "Provisional P1 scout timing from early public FFLogs prog pulls."),
+        eventTag: "raidwide",
+        source: "fflogs"
+      },
+      {
+        ...event("dmu-p1-hyperdrive-2", 136, "Hyperdrive", "unknown", "tank", "high", "Observed as a cast in early public FFLogs prog pulls. Targeting needs review."),
+        eventTag: "tankbuster",
+        source: "fflogs"
+      },
+      {
+        ...event("dmu-p1-tele-trouncing", 147, "Tele-Trouncing", "unknown", "mechanic", "high", "Provisional P1 scout timing from early public FFLogs prog pulls."),
+        eventTag: "unknown",
+        source: "fflogs"
+      },
+      {
+        ...event("dmu-p1-graven-image-3", 162, "Graven Image", "unknown", "mechanic", "unknown", "Provisional P1 scout timing from early public FFLogs prog pulls."),
+        eventTag: "unknown",
+        mitigationRelevant: false,
+        source: "fflogs"
+      },
+      {
+        ...event("dmu-p1-mystery-magic-2", 182, "Mystery Magic", "unknown", "mechanic", "unknown", "Provisional P1 scout timing from early public FFLogs prog pulls."),
+        eventTag: "unknown",
+        mitigationRelevant: false,
+        source: "fflogs"
+      },
+      {
+        ...event("dmu-p1-thrumming-thunder-2", 182, "Thrumming Thunder III", "unknown", "mechanic", "medium", "Provisional P1 scout timing from early public FFLogs prog pulls. Targeting needs review."),
+        eventTag: "unknown",
+        source: "fflogs"
+      },
+      {
+        ...event("dmu-p1-ultimate-embrace", 216, "Ultimate Embrace", "unknown", "tank", "high", "Lower-confidence scout timing: only observed in pulls that survived past 3:30."),
+        eventTag: "tankbuster",
+        source: "fflogs"
+      },
+      {
+        ...event("dmu-p1-forsaken", 229, "Forsaken", "unknown", "mechanic", "high", "Lower-confidence scout timing: only observed in pulls that survived past 3:45."),
+        eventTag: "unknown",
+        source: "fflogs"
+      }
+    ],
+    sourceLinks: [
+      {
+        label: "Early public FFLogs scout report",
+        url: "https://www.fflogs.com/reports/4nkRWbJGj38tywrM",
+        type: "fflogs"
+      }
+    ],
+    sourceReports: [
+      {
+        reportCode: "4nkRWbJGj38tywrM",
+        fightId: 1,
+        fightName: "Kefka",
+        encounterId: 1085,
+        encounterName: "Dancing Mad",
+        kill: false,
+        duration: 253,
+        sourceUrl: "https://www.fflogs.com/reports/4nkRWbJGj38tywrM#fight=1"
+      },
+      {
+        reportCode: "4nkRWbJGj38tywrM",
+        fightId: 5,
+        fightName: "Kefka",
+        encounterId: 1085,
+        encounterName: "Dancing Mad",
+        kill: false,
+        duration: 198,
+        sourceUrl: "https://www.fflogs.com/reports/4nkRWbJGj38tywrM#fight=5"
+      },
+      {
+        reportCode: "4nkRWbJGj38tywrM",
+        fightId: 6,
+        fightName: "Kefka",
+        encounterId: 1085,
+        encounterName: "Dancing Mad",
+        kill: false,
+        duration: 198,
+        sourceUrl: "https://www.fflogs.com/reports/4nkRWbJGj38tywrM#fight=6"
+      },
+      {
+        reportCode: "4nkRWbJGj38tywrM",
+        fightId: 11,
+        fightName: "Kefka",
+        encounterId: 1085,
+        encounterName: "Dancing Mad",
+        kill: false,
+        duration: 224,
+        sourceUrl: "https://www.fflogs.com/reports/4nkRWbJGj38tywrM#fight=11"
+      },
+      {
+        reportCode: "4nkRWbJGj38tywrM",
+        fightId: 12,
+        fightName: "Kefka",
+        encounterId: 1085,
+        encounterName: "Dancing Mad",
+        kill: false,
+        duration: 206,
+        sourceUrl: "https://www.fflogs.com/reports/4nkRWbJGj38tywrM#fight=12"
+      }
+    ],
+    notes: "Day-one prog template seeded from early public FFLogs Dancing Mad pulls. Treat these P1 timings as provisional scout data; confirm target shapes, damage types, and mitigation relevance with your static's logs as progression continues.",
     createdAt: seedDate,
     updatedAt: seedDate
   },
