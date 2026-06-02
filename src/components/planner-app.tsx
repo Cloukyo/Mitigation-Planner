@@ -660,14 +660,16 @@ function TimelineCanvas({ warnings, readOnly = false }: { warnings: Warning[]; r
 
   const duration = Math.max(...encounter.phases.map((phase) => phase.endTime), ...encounter.events.map((event) => event.time + 30));
   const width = Math.max(960, duration * zoom);
+  const labelColumnWidth = 150;
+  const contentWidth = labelColumnWidth + width;
   const mobilePlayer = players.find((player) => player.id === selectedPlayerId) ?? players[0];
   const visiblePlayers = typeof window !== "undefined" && window.innerWidth < 720 ? [mobilePlayer] : players;
 
   return (
     <section className="min-w-0 flex-1 overflow-hidden bg-ink">
       <div className="h-full overflow-auto">
-        <div className="min-w-[720px]">
-          <div className="grid grid-cols-[150px_1fr] border-b border-slate-800">
+        <div className="min-w-[720px]" style={{ width: contentWidth }}>
+          <div className="grid grid-cols-[150px_1fr] border-b border-slate-800" style={{ width: contentWidth }}>
             <div className="border-r border-slate-800 bg-slate-950/70 px-3 py-2 text-xs font-semibold uppercase text-slate-500">Events</div>
             <div className="timeline-grid relative h-44" style={{ width, ["--minor-grid" as string]: `${zoom * 10}px`, ["--major-grid" as string]: `${zoom * 60}px` }}>
               {encounter.phases.map((phase) => (
